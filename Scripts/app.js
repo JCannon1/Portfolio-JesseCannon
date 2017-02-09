@@ -24,3 +24,11 @@ var SecondParagraph = document.getElementById("SecondParagraph");
 var myHTMLContent = "<h2>About Me</h2>";
 
 SecondParagraph.innerHTML = myHTMLContent;
+
+    
+case "Contact":
+let FullName = document.getElementById("FullName");
+let ContactNumber = document.getElementById("ContactNumber");
+let Email = document.getElementById("Email");
+let Message = document.getElementById("Message");
+    break;
