@@ -25,21 +25,3 @@ var myHTMLContent = "<h2>About Me</h2>";
 
 SecondParagraph.innerHTML = myHTMLContent;
 
-    
-case "Contact":
-    let FullName = document.getElementById("FullName");
-    let ContactNumber = document.getElementById("ContactNumber");
-    let Email = document.getElementById("Email");
-    let Message = document.getElementById("Message");
-    let SendButton = document.getElementById("SendButton");
-
-    SendButton.addEventListener("click", function(event){
-        event.preventDefault();
-
-        console.log(FullName);
-        console.log(ContactNumber);
-        console.log(Email);
-        console.log(Message);
-    });
-
-    break;
