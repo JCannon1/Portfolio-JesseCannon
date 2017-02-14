@@ -49,7 +49,7 @@ console.log(firstHeadingContact.textContent);
   // connecting myContent to my contact.html page 
 var FirstContactParagraph = document.getElementById("FirstContactParagraph");
 
-var mySecondContent = "If you would like to contact me for further information of my work please feel free to reach me by leaving your Name, Number and a short message of what you would like to discuss."
+var mySecondContent = "If you would like to contact me for further information of my work please feel free to reach me by leaving your Name, Number, Email and a short message of what you would like to discuss."
 
 FirstContactParagraph.textContent = mySecondContent; 
     let FullName = document.getElementById("FullName");
@@ -61,15 +61,16 @@ FirstContactParagraph.textContent = mySecondContent;
     SendButton.addEventListener("click", function(event){
         event.preventDefault();
 
-        console.log(FullName);
-        console.log(ContactNumber);
-        console.log(Email);
-        console.log(Message);
+        // console.log(FullName);
+        // console.log(ContactNumber);
+        // console.log(Email);
+        // console.log(Message);
 
-        let FullName = $('#FullName').val()
-        let ContactNumber = $('#ContactNumber').val()
-        let Email = $('#Email').val()
-        let Message = $('#Message').val()
+        let FullName = document.getElementById('FullName').value;
+        let ContactNumber = document.getElementById('ContactNumber').value;
+        let Email = document.getElementById('Email').value;
+        let Message = document.getElementById('Message').value;
+
     });
 
     break;
