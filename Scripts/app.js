@@ -31,9 +31,6 @@ var myHTMLContent = "<h2>About Me</h2>";
 
 SecondParagraph.innerHTML = myHTMLContent;
 
-// create a reference to the button on the page (index.html)
-var SendButton = document.getElementById("SendButton");
-
 // add an event listener - for the click event and call the Click function
 SendButton.addEventListener("click", Click);
 
@@ -42,6 +39,17 @@ function Click() {
     console.log("clicked");
 }
     break;
+
+    var firstHeadingContact = document.getElementById("firstHeadingContact");
+
+console.log(firstHeadingContact.textContent);
+
+// connecting myContent to my contact.html page 
+var FirstContactParagraph = document.getElementById("FirstContactParagraph");
+
+var myContent = "If you would like to contact me for further information of my work please feel free to reach me by leaving your Name, Number and a short message of what you would like to discuss."
+
+FirstContactParagraph.textContent = myContent; 
    
   case "Contact":
     let FullName = document.getElementById("FullName");
