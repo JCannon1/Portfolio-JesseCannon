@@ -66,10 +66,10 @@ FirstContactParagraph.textContent = myContent;
         console.log(Email);
         console.log(Message);
 
-        let variable = $('#FullName').val()
-        let variable = $('#ContactNumber').val()
-        let variable = $('#Email').val()
-        let variable = $('#Message').val()
+        let FullName = $('#FullName').val()
+        let ContactNumber = $('#ContactNumber').val()
+        let Email = $('#Email').val()
+        let Message = $('#Message').val()
     });
 
     break;
