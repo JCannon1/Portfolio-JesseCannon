@@ -4,11 +4,15 @@
 // File description: main page JavaScript for my mini portfolio 
 
 // home page JavaScript 
-
 console.log("App Started");
+console.info("Page Title: " + document.title);
+
+swicth (document.title) {
+    case "Home":
+
 
 // declare/ initialize firstHeading variable 
-var firstHeading = document.getElementById("firstHeading");
+let firstHeading = document.getElementById("firstHeading");
 
 console.log(firstHeading.textContent);
 
@@ -24,4 +28,34 @@ var SecondParagraph = document.getElementById("SecondParagraph");
 var myHTMLContent = "<h2>About Me</h2>";
 
 SecondParagraph.innerHTML = myHTMLContent;
+
+// create a reference to the button on the page (index.html)
+var SendButton = document.getElementById("SendButton");
+
+// add an event listener - for the click event and call the Click function
+SendButton.addEventListener("click", Click);
+
+// click function - used as an event handler
+function Click() {
+console.log("clicked");
+}
+break;
+   
+    case "Contact":
+    let FullName = document.getElementById("FullName");
+    let ContactNumber = document.getElementById("ContactNumber");
+    let Email = document.getElementById("Email");
+    let Message = document.getElementById("Message");
+    let SendButton = document.getElementById("SendButton");
+
+    SendButton.addEventListener("click", function(event){
+        event.preventDefault();
+
+        console.log(FullName);
+        console.log(ContactNumber);
+        console.log(Email);
+        console.log(Message);
+    });
+
+    break;
 
