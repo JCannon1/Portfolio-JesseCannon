@@ -3,11 +3,13 @@
 // Web site name: http://jessecannon-miniportfolio.azurewebsites.net/index.html 
 // File description: main page JavaScript for my mini portfolio 
 
+(function () {
+
 // home page JavaScript 
 console.log("App Started");
-console.info("Page Title: " + document.title);
+console.info('Page Title: ${document.title}');
 
-swicth (document.title) {
+switch (document.title) {
     case "Home":
 
 
@@ -17,9 +19,9 @@ let firstHeading = document.getElementById("firstHeading");
 console.log(firstHeading.textContent);
 
 // connecting myContent to my index.html page 
-var FirstParagraph = document.getElementById("FirstParagraph");
+let FirstParagraph = document.getElementById("FirstParagraph");
 
-var myContent = "Hello, my name is Jesse Cannon and my goal of this portfolio site is to show you all of my web design skills I have acquired from my time at Georgian College. My Projects page will display all of the top pieces of work I have done so far for visuals. While the Contact page will ask you for your contact information. I hope my page is of great use to you. Jesse Cannon.";
+let myContent = "Hello, my name is Jesse Cannon and my goal of this portfolio site is to show you all of my web design skills I have acquired from my time at Georgian College. My Projects page will display all of the top pieces of work I have done so far for visuals. While the Contact page will ask you for your contact information. I hope my page is of great use to you. Jesse Cannon.";
 
 FirstParagraph.textContent = myContent;
 
@@ -37,11 +39,11 @@ SendButton.addEventListener("click", Click);
 
 // click function - used as an event handler
 function Click() {
-console.log("clicked");
+    console.log("clicked");
 }
-break;
+    break;
    
-    case "Contact":
+  case "Contact":
     let FullName = document.getElementById("FullName");
     let ContactNumber = document.getElementById("ContactNumber");
     let Email = document.getElementById("Email");
@@ -58,4 +60,6 @@ break;
     });
 
     break;
+}
 
+})();
