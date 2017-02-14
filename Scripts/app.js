@@ -43,15 +43,15 @@ function Click() {
     var firstHeadingContact = document.getElementById("firstHeadingContact");
 
 console.log(firstHeadingContact.textContent);
+   
+  case "Contact Me":
 
-// connecting myContent to my contact.html page 
+  // connecting myContent to my contact.html page 
 var FirstContactParagraph = document.getElementById("FirstContactParagraph");
 
 var myContent = "If you would like to contact me for further information of my work please feel free to reach me by leaving your Name, Number and a short message of what you would like to discuss."
 
 FirstContactParagraph.textContent = myContent; 
-   
-  case "Contact":
     let FullName = document.getElementById("FullName");
     let ContactNumber = document.getElementById("ContactNumber");
     let Email = document.getElementById("Email");
@@ -65,6 +65,11 @@ FirstContactParagraph.textContent = myContent;
         console.log(ContactNumber);
         console.log(Email);
         console.log(Message);
+
+        let variable = $('#FullName').val()
+        let variable = $('#ContactNumber').val()
+        let variable = $('#Email').val()
+        let variable = $('#Message').val()
     });
 
     break;
