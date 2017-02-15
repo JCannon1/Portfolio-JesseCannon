@@ -61,18 +61,28 @@ FirstContactParagraph.textContent = mySecondContent;
     SendButton.addEventListener("click", function(event){
         event.preventDefault();
 
-        // console.log(FullName);
-        // console.log(ContactNumber);
-        // console.log(Email);
-        // console.log(Message);
+        // display inputs to the console
+        console.log(FullName);
+        console.log(ContactNumber);
+        console.log(Email);
+        console.log(Message);
 
+        // create variables to store inputs
         let FullName = document.getElementById('FullName').value;
         let ContactNumber = document.getElementById('ContactNumber').value;
         let Email = document.getElementById('Email').value;
         let Message = document.getElementById('Message').value;
 
-    });
-
+        // save inputs
+        $(function() {
+            $('SendButton').submit(function() {
+                console.log('FullName: '+$('input[name="FullName]').val() + 'ContactNumber: '+$('input[name="ContactNumber]').val() + 
+                'Email: '+$('input[name="Email]').val() + 
+                'Message: '+$('input[name="Message]').val());
+            });
+        });
+    }
+    )
     break;
 }
 
