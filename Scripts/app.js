@@ -9,19 +9,18 @@
 console.log("App Started");
 console.info('Page Title: ${document.title}');
 
-switch (document.title) {
-    case "Home":
-
-
 // declare/ initialize firstHeading variable 
 let firstHeading = document.getElementById("firstHeading");
 
 console.log(firstHeading.textContent);
 
-// connecting myContent to my index.html page 
-let FirstParagraph = document.getElementById("FirstParagraph");
+switch (document.title) {
+    case "Home":
 
-let myContent = 'Hello, my name is Jesse Cannon and my goal of this portfolio site is to show you all of my web design skills I have acquired from my time at Georgian College. My Projects page will display all of the top pieces of work I have done so far for visuals. While the Contact page will ask you for your contact information. I hope my page is of great use to you. Jesse Cannon.';
+// connecting myContent to my index.html page 
+var FirstParagraph = document.getElementById("FirstParagraph");
+
+var myContent = "Hello, my name is Jesse Cannon and my goal of this portfolio site is to show you all of my web design skills I have acquired from my time at Georgian College. My Projects page will display all of the top pieces of work I have done so far for visuals. While the Contact page will ask you for your contact information. I hope my page is of great use to you. Jesse Cannon.";
 
 FirstParagraph.textContent = myContent;
 
@@ -49,7 +48,7 @@ console.log(firstHeadingContact.textContent);
   // connecting myContent to my contact.html page 
 var FirstContactParagraph = document.getElementById("FirstContactParagraph");
 
-var mySecondContent = "If you would like to contact me for further information of my work please feel free to reach me by leaving your Name, Number, Email and a short message of what you would like to discuss."
+var mySecondContent = "If you would like to contact me for further information of my work please feel free to reach me by leaving your Name, Number, Email and a short message of what you would like to discuss.";
 
 FirstContactParagraph.textContent = mySecondContent; 
     let FullName = document.getElementById("FullName");
@@ -61,11 +60,10 @@ FirstContactParagraph.textContent = mySecondContent;
     SendButton.addEventListener("click", function(event){
         event.preventDefault();
 
-        // display inputs to the console
-        console.log(FullName);
-        console.log(ContactNumber);
-        console.log(Email);
-        console.log(Message);
+        // console.log(FullName);
+        // console.log(ContactNumber);
+        // console.log(Email);
+        // console.log(Message);
 
         // create variables to store inputs
         let FullName = document.getElementById('FullName').value;
